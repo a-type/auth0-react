@@ -1,5 +1,11 @@
 # Change Log
 
+## [v1.2.0](https://github.com/a-type/auth0-react/tree/v1.2.0) (2020-10-17)
+
+**Added**
+
+- Users can now pass in a pre-instantiated `Auth0Client` instance, which can be utilized in code external to the React lifecycle
+
 ## [v1.1.0](https://github.com/auth0/auth0-react/tree/v1.1.0) (2020-09-17)
 
 **Added**

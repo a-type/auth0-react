@@ -1,10 +1,10 @@
-# @auth0/auth0-react
+# @a-type/auth0-react
 
 Auth0 SDK for React Single Page Applications (SPA).
 
 [![CircleCI](https://img.shields.io/circleci/build/github/auth0/auth0-react.svg?branch=master&style=flat)](https://circleci.com/gh/auth0/auth0-react)
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/v/@auth0/auth0-react.svg?style=flat)](https://www.npmjs.com/package/@auth0/auth0-react)
+[![npm](https://img.shields.io/npm/v/@a-type/auth0-react.svg?style=flat)](https://www.npmjs.com/package/@a-type/auth0-react)
 [![codecov](https://img.shields.io/codecov/c/github/auth0/auth0-react/master.svg?style=flat)](https://codecov.io/gh/auth0/auth0-react)
 
 ## Table of Contents
@@ -30,13 +30,13 @@ Auth0 SDK for React Single Page Applications (SPA).
 Using [npm](https://npmjs.org/)
 
 ```bash
-npm install @auth0/auth0-react
+npm install @a-type/auth0-react
 ```
 
 Using [yarn](https://yarnpkg.com/)
 
 ```bash
-yarn add @auth0/auth0-react
+yarn add @a-type/auth0-react
 ```
 
 ## Getting Started
@@ -47,7 +47,7 @@ Configure the SDK by wrapping your application in `Auth0Provider`:
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Auth0Provider } from '@auth0/auth0-react';
+import { Auth0Provider } from '@a-type/auth0-react';
 import App from './App';
 
 ReactDOM.render(
@@ -67,7 +67,7 @@ Use the `useAuth0` hook in your components to access authentication state (`isLo
 ```jsx
 // src/App.js
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from '@a-type/auth0-react';
 
 function App() {
   const {
@@ -109,7 +109,7 @@ Use the `withAuth0` higher order component to add the `auth0` property to Class 
 
 ```jsx
 import React, { Component } from 'react';
-import { withAuth0 } from '@auth0/auth0-react';
+import { withAuth0 } from '@a-type/auth0-react';
 
 class Profile extends Component {
   render() {
@@ -128,7 +128,7 @@ Protect a route component using the `withAuthenticationRequired` higher order co
 
 ```jsx
 import React from 'react';
-import { withAuthenticationRequired } from '@auth0/auth0-react';
+import { withAuthenticationRequired } from '@a-type/auth0-react';
 
 const PrivateRoute = () => <div>Private</div>;
 
@@ -146,7 +146,7 @@ Call a protected API with an Access Token:
 
 ```jsx
 import React, { useEffect, useState } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from '@a-type/auth0-react';
 
 const Posts = () => {
   const { getAccessTokenSilently } = useAuth0();
@@ -199,7 +199,7 @@ We appreciate feedback and contribution to this repo! Before you get started, pl
 
 ## Support + Feedback
 
-For support or to provide feedback, please [raise an issue on our issue tracker](https://github.com/auth0/auth0-react/issues).
+For support or to provide feedback, please [raise an issue on our issue tracker](https://github.com/a-type/auth0-react/issues).
 
 ## Troubleshooting
 
@@ -228,4 +228,4 @@ Auth0 helps you to easily:
 
 ## License
 
-This project is licensed under the MIT license. See the [LICENSE](https://github.com/auth0/auth0-react/blob/master/LICENSE) file for more info.
+This project is licensed under the MIT license. See the [LICENSE](https://github.com/a-type/auth0-react/blob/master/LICENSE) file for more info.
